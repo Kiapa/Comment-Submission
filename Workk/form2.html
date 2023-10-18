@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register Employee</title>
+</head>
+<body>
+    <h2>Register Employee Here</h2>
+    <fieldset>
+    <legend>Employee Personal Details</legend>
+    <form action="submit_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br>
+
+        <label for="id">ID Number:</label>
+        <input type="text" id="id" name="id" required><br>
+
+        <label for="kra_pin">KRA PIN:</label>
+        <input type="text" id="kra_pin" name="kra_pin" required><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female" required>
+        <label for="female">Female</label><br>
+
+        <label for="department">Department:</label>
+        <select id="department" name="department" required>
+            <option value="Management">Management</option>
+            <option value="Finance">Finance</option>
+            <option value="ICT">ICT</option>
+            <option value="Human Resource">Human Resource</option>
+            <option value="Customer">Customer</option>
+        </select><br>
+    </fieldset>
+    <fieldset>
+    <legend>Employee Remuneration Package</legend>
+        <label for="basic_salary">Basic Salary:</label>
+        <input type="text" id="basic_salary" name="basic_salary" required><br>
+
+        <label for="house_allowance">House Allowance:</label>
+        <input type="text" id="house_allowance" name="house_allowance" required><br>
+
+        <label for="commuter_allowance">Commuter Allowance:</label>
+        <input type="text" id="commuter_allowance" name="commuter_allowance" required><br>
+    </fieldset>
+
+        <input type="submit" value="Register Employee">
+    </form>
+</body>
+</html>
